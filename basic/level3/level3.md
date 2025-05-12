@@ -36,10 +36,7 @@
 ## Demonstration Video
 Below is a video demonstrating all API routes working on the frontend:
 
-<video controls width="600">
-  <source src="api_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+- [Watch the API Demo Video on GitHub](https://github.com/Abhishek-Gaire/practice/blob/a2b536e2036ea5af64acb0e81a84308660522834/basic/level3/api_demo.mp4)
 
 ## Objectives Achieved
 - [x] Built a static website layout using HTML.

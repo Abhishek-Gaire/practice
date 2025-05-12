@@ -40,11 +40,20 @@
     - Command: `git --version`
     - Output: `git version 2.45.2.windows.1`
 
+### 7. **Check Git Status**
+- Checked the status of the repository to identify untracked files.
+  - Command: `git status`
+  - Output: On branch master
+    No commits yet 
+    - Untracked files:
+    - `basic/`
+     
+  
 ### 7. **Add and Commit Initial Files**
 - Added a README.md file to the repository.
-    - Command: `git add basic/level1/level1.md`
-- Committed the changes with an initial message.
-    - Command: `git commit -m "first commit"`
+    - Command: `git add .`
+- Committed the staged changes with a descriptive message.
+- Command: `git commit -m "feat: basic level 1 done"`
 
 ### 8. **Set Main Branch**
 - Renamed the default branch to `main`.
@@ -62,7 +71,8 @@
 ## Screenshots
 Below is a screenshot of the terminal showing the initial setup process:
 
-![Terminal Screenshot](terminal_screenshot.jpg)
+![Terminal Screenshot](screenshot1.png)
+![Terminal Screenshot](screenshot2.png)
 
 ## Objectives Achieved
 - [x] Installed and configured Node.js and npm.

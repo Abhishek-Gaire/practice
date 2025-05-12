@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<div class="container mx-auto p-6 bg-white rounded-lg shadow-lg max-w-4xl">
+  <h1 class="text-3xl font-bold text-center mb-6 text-indigo-600">Product Management</h1>
+
+  <!-- Form for Adding/Editing Products -->
+  <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+    <h2 class="text-xl font-semibold mb-4 text-gray-700">Add/Edit Product</h2>
+    <div class="flex flex-col gap-4">
+      <input type="hidden" id="productId">
+      <label for="productName" class="text-bold">Product Name:</label>
+      <input type="text" id="productName" placeholder="Product Name" class="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <label for="productPrice" class="text-bold">Product Price:</label>
+      <input type="number" id="productPrice" placeholder="Price" step="0.01" class="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <div class="flex gap-2">
+        <button onclick="addOrUpdateProduct()" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Add/Update Product</button>
+        <button onclick="clearForm()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fetch All Products Button -->
+  <button onclick="fetchProducts()" class="w-full bg-green-600 text-white px-4 py-2 rounded-lg mb-6 hover:bg-green-700">Fetch All Products</button>
+
+  <!-- Products Container -->
+  <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

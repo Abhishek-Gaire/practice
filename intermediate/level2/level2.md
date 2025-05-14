@@ -84,27 +84,29 @@
 
 **No Token:**
 ![No Token Provided](./images/addProductNoToken.png)
+
 ### PUT `/api/v1/products/:id` - Update Product (Admin Only)
 
 - Updates a product (admin authentication required).
 
 **Request Example:**  
-![Update Product Request Screenshot](./images/update-product-request.png) <!-- Add your image here -->
+![Update Product Request Screenshot](./images/update-product-request.png) 
 
 **Response Example:**  
-![Update Product Response Screenshot](./images/update-product-response.png) <!-- Add your image here -->
+![Update Product Response Screenshot](./images/update-product-response.png) 
 
-
+**No Token:**
+![No Token Provided](./images/edit-product-no-token.png)
 
 ### DELETE `/api/v1/products/:id` - Delete Product (Admin Only)
 
 - Deletes a product (admin authentication required).
 
 **Request Example:**  
-![Delete Product Request Screenshot](./images/delete-product-request.png) <!-- Add your image here -->
+![Delete Product Request Screenshot](./images/delete-product-request.png) 
 
 **Response Example:**  
-![Delete Product Response Screenshot](./images/delete-product-response.png) <!-- Add your image here -->
+![Delete Product Response Screenshot](./images/delete-product-response.png)
 
 ### 5. **Test the API**
 - Ran the server with `npm start`.

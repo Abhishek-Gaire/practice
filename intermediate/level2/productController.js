@@ -51,7 +51,7 @@ const editProduct = async (req, res) => {
 
 const deleteProduct = async(req,res) =>{
     try{
-        const id = parseInt(req.params.id);
+        const id =req.params.id;
         if(!id){
             return res.status(404).json({error: 'Product not found.'});
         }

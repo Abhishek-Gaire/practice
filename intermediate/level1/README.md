@@ -48,6 +48,12 @@
 - Deleted a product using the "Delete" button.
 - Confirmed loading states and error handling work as expected.
 
+## Demonstration Video
+Below is a video demonstrating all API routes working on the frontend:
+
+- [Watch the API Demo Video on GitHub](https://github.com/Abhishek-Gaire/practice/blob/a2b536e2036ea5af64acb0e81a84308660522834/basic/level3/api_demo.mp4)
+
+
 ## Objectives Achieved
 - [x] Set up a project with React.
 - [x] Used functional components and state management (with React hooks).

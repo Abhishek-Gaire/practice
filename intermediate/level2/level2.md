@@ -1,7 +1,7 @@
 # Intermediate Level 2 Documentation: Backend with Authentication and Authorization
 
 ## Date
-- **Completed On**: May 13, 2025
+- **Completed On**: May 15, 2025
 
 ## Steps Performed
 
@@ -54,7 +54,7 @@
 
 ### GET `/api/v1/products` - Get All Products (Public)
 
-- Returns a list of products (no authentication required).
+- Returns a list of products (should be logged in).
 
 **Request Example:**  
 ![Get Products Request Screenshot](./images/get-products-request.png) 
@@ -72,8 +72,13 @@
 **Response Example:**  
 ![Get Product by ID Response Screenshot](./images/get-product-by-id-response.png) <!-- Add your image here -->
 
-### POST `/api/v1/products` - Create Product (Admin Only)
+**No Token:**
+![No Token Provided](./images/getProductByIdNoToken.png)
 
+**Not Authorized:**
+![Not Authorized(not admin)](./images/getProductByIdNotAuthorized.png)
+
+### POST `/api/v1/products` - Create Product (Admin Only)
 - Creates a new product (admin authentication required).
 
 **Request Example:**  

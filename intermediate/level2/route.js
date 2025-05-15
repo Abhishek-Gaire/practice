@@ -17,7 +17,7 @@ routes.route("/products")
     .post(authorizeRole("admin"), productControllers.addProduct);
 
 routes.route("/products/:id")
-    .get(productControllers.findProductById)
+    .get(authorizeRole("admin"),productControllers.findProductById)
     .put(authorizeRole("admin"),productControllers.editProduct)
     .delete(authorizeRole("admin"),productControllers.deleteProduct);
 
